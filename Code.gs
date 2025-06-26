@@ -1,4 +1,4 @@
 // Code.gs
 function doGet() {
-  return HtmlService.createHtmlOutputFromFile('website');
+  return HtmlService.createHtmlOutputFromFile('website2');
 }

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Tools for Career Empowerment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;700&family=Audiowide&display=swap" rel="stylesheet" />
+  <style>
+    /* Base Styles and Theme Colors */
+    body {
+      font-family: 'Rajdhani', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #0a0f2c 0%, #00010a 100%);
+      color: #ccc;
+      scroll-behavior: smooth;
+    }
+    :root {
+      --accent: #0ff;
+      --text-color: #ccc;
+    }
+    /* Header and Hero */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #0a0f2c;
+      padding: 4rem 2rem;
+      text-align: center;
+      transition: padding 0.3s ease;
+      background: url('a1.png') center/cover no-repeat, #0a0f2c;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.5rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 0 8px var(--accent), 0 0 16px var(--accent);
+      animation: glow 3s ease-in-out infinite alternate;
+      transition: font-size 0.3s ease;
+    }
+    header p {
+      font-size: 2rem;
+      color: #ccc;
+    }
+    header.scrolled {
+      padding: 1rem 2rem;
+    }
+    header.scrolled h1 {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+    header.scrolled p {
+      display: none;
+    }
+    /* Section Styles */
+    section, article {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 2rem auto 0 auto;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.15);
+      backdrop-filter: blur(5px);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,255,255,0.05);
+    }
+    /* Headings */
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    h3 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.5rem;
+      color: #fff;
+      margin: 0.5rem 0;
+    }
+    /* Highlight sub-sections */
+    .highlight {
+      background: rgba(255,255,255,0.03);
+      padding: 1rem;
+      margin: 1rem 0;
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,255,255,0.2);
+    }
+    .highlight h3 {
+      color: var(--accent);
+      margin-top: 0;
+    }
+    /* Lists */
+    ul {
+      margin: 1rem 0;
+      padding-left: 1.2rem;
+    }
+    ul li {
+      margin: 0.5rem 0;
+    }
+    /* Links */
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: text-shadow 0.3s;
+    }
+    a:hover {
+      text-shadow: 0 0 6px var(--accent);
+    }
+    /* Apply button */
+    .apply-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .apply-button a {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.2rem;
+      background: transparent;
+      color: #0ff;
+      padding: 1rem 2rem;
+      border: 2px solid #0ff;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      margin-bottom: 0.5rem;
+    }
+    .apply-button a:hover {
+      background: #0ff;
+      color: #000;
+      box-shadow: 0 0 15px #0ff;
+    }
+    /* Footer */
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+    /* Icon alignment and spacing */
+    .icon {
+      vertical-align: middle;
+    }
+    .icon-before {
+      margin-right: 0.3em;
+    }
+    .icon-after {
+      margin-left: 0.3em;
+    }
+    /* Fade-in on scroll */
+    .js .fade-in-section {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .js .fade-in-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      header {
+        padding: 2rem 1rem;
+      }
+      header h1 {
+        font-size: 2.2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      section, article {
+        padding: 1.5rem;
+      }
+    }
+    /* Glow animation for header text */
+    @keyframes glow {
+      0% { text-shadow: 0 0 6px var(--accent), 0 0 12px var(--accent); }
+      50% { text-shadow: 0 0 12px var(--accent), 0 0 24px var(--accent); }
+      100% { text-shadow: 0 0 6px var(--accent), 0 0 12px var(--accent); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI Tools for Career Empowerment</h1>
+    <p>with Tracks in Art, Design, Writing, and Technology</p>
+    <p><strong>July 21 – August 8, 2025</strong></p>
+  </header>
+
+  <section class="fade-in-section">
+    <h2>Program Overview</h2>
+    <p>A 3-week, project-based summer program designed for students, aspiring 
+    creatives, and professionals seeking to understand and apply AI tools in a 
+    variety of domains. Participants will explore hands-on applications of AI 
+    technologies—such as image generation, storytelling, design, and web tools—while
+     developing portfolio-worthy projects.</p>
+    <p>Whether you're excited about AI or deeply skeptical of it, one thing is 
+    certain: AI is already shaping the world we live in. To work with AI—or even to 
+    challenge it—you need to understand it. This program empowers you to use it 
+    responsibly, question it intelligently, and shape its impact across 
+    industries.</p>
+  </section>
+
+  <section class="fade-in-section">
+    <h2><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icon-tabler-users icon-before"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /><path d="M21 21v-2a4 4 0 0 0 -3 -3.85" /></svg> Who Should Join?</h2>
+    <ul>
+      <li>Art and design students</li>
+      <li>Creative professionals or freelancers</li>
+      <li>Anyone interested in AI, tools, and creative exploration</li>
+      <li>Skeptics who want to understand what they’re pushing back against</li>
+    </ul>
+  </section>
+
+  <section class="fade-in-section">
+    <h2>Why Learn AI Now?</h2>
+    <p>Whether you're excited or skeptical about AI, one thing is clear: AI is 
+    already shaping our world. Understanding how it works gives you the power to use
+     it, question it, or change its direction.</p>
+    <p>To work with AI — or to challenge it — you first need to understand 
+    it.</p>
+  </section>
+
+  <section class="fade-in-section">
+    <h2><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icon-tabler-checklist icon-before"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9.615 20h-2.615a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8" /><path d="M14 19l2 2l4 -4" /><path d="M9 8h4" /><path d="M9 12h2" /></svg> What You'll Do</h2>
+    <ul>
+      <li>Explore tools like DALL·E, Midjourney, ChatGPT, RunwayML, DeepSeek, 
+    and Canva AI</li>
+      <li>Work on self-defined or team creative projects</li>
+      <li>Attend talks, hands-on workshops, and critique sessions</li>
+      <li>Participate in art walks, movie nights, and sports (like tennis)</li>
+    </ul>
+  </section>
+
+  <section class="fade-in-section">
+    <h2>Program Details</h2>
+    <p><strong><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icon-tabler-calendar icon-before"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M11 15h1" /><path d="M12 15v3" /></svg> Dates:</strong> July 21 – August 8, 2025 </p>
+    <p><strong><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icon-tabler-map-pin icon-before"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg> Location:</strong> 113 McAllister Building, The Pennsylvania 
+    State University, University Park, PA</p>
+    <p><strong>Format:</strong> Hybrid (in-person &amp; online), project-based with 
+    daily sessions and mentorship</p>
+    <p><strong><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icon-tabler-currency-dollar icon-before"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2" /><path d="M12 3v3m0 12v3" /></svg> Program Fee:</strong></p>
+    <ul>
+      <li>$300 – Full Program Fee (In Person)</li>
+      <li>$150 – Full Program Fee (Online)</li>
+      <hr>
+      <!-- <li>$200 – Early Bird (by June 27)</li> -->
+      <li>$200 – Financial Need Rate (In Person, Application Required)</li>
+      <li>$100 – Financial Need Rate (Online, Application Required)</li> 
+    </ul>
+    <p>Includes all sessions, materials, mentorship, and the optional 2-week 
+    project extension (no additional cost).</p>
+  </section>
+
+  <section class="fade-in-section">
+    <h2><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icon-tabler-home icon-before"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a 2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a 2 2 0 0 1 2 2v6" /></svg> Housing</h2>
+    <p> Housing is on your own; however, we have arranged a discounted rate of $75 per night with Sleep Inn State College. Guests should ask for the PSU Math Rate when booking. Occasionally, the front desk may have difficulty locating the rate by name — in that case, they can look it up using the following department information: </p>
+<li>Math Department</li>
+<li>109 McAllister Building</li>
+<li>University Park, PA 16802</li>
+<li>Phone: 814-865-7527</li>
+  </section>
+
+  <section class="fade-in-section">
+    <h2>How to Apply</h2>
+    <div class="apply-button">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScoUrGebtGaT9WKYeGTH45PQIYxrihynkOYVE12Q2N5rbvrgg/viewform" target="_blank">Apply Here <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icon-tabler-external-link icon-after"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg></a>
+      <p><strong>Deadline: July 1, 2025</strong></p>
+    </div>
+  </section>
+
+  <section class="fade-in-section" style="text-align: center;">
+    <h2><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icon-tabler-clock icon-before"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 7v5l3 3" /></svg> Program at A Glance</h2>
+    <div class="highlight">
+      <h3>Week 1 (July 21 – July 25)</h3>
+      <p><strong>Monday:</strong> Orientation, Tool Demos, Welcome Dinner<br />
+      <strong>Tuesday–Sunday:</strong> AI workshops, storytelling, design tools,
+      group events, and rest day</p>
+    </div>
+    <div class="highlight">
+      <h3>Week 2 (July 28 – August 1)</h3>
+      <p>Workshops in audio, video, mini projects, guest talks, social 
+      activities, and team presentations</p>
+    </div>
+    <div class="highlight">
+      <h3>Week 3 (August 4 – August 9)</h3>
+      <p>Mentorship, feedback rounds, final project proposals and documentation 
+      workshops</p>
+    </div>
+    <!-- <div class="highlight">
+      <h3>Week 4 (July 28 – August 1)</h3>
+      <p>Project finalization, showcases, closing events, and optional extension
+      begins</p>
+    </div> -->
+  </section>
+
+  <footer>
+    &copy; 2025 AI Tools for Career Empowerment Program – Penn State University
+  </footer>
+
+  <script>
+    // Mark that JS is enabled
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+    // Toggle sticky header shrink on scroll
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    // Fade-in sections on scroll using IntersectionObserver
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in-section').forEach(sec => {
+      observer.observe(sec);
+    });
+  </script>
+</body>
+</html>
